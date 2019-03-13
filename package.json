@@ -7,7 +7,7 @@
     "test": "npm-run-all -s test:code",
     "test:code": "mocha test/",
     "deploy:github-pages": "git push origin master:gh-pages",
-    "test-watch": "npm-run-all  -p -r test-watch:code",
+    "test-watch": "npx npm-run-all  -p -r test-watch:code",
     "test-watch:code": "mocha test/ --bail --watch --watch-extensions html"
   },
   "author": "Adam Fortuna",
